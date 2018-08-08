@@ -8,6 +8,11 @@
 
 #import "MCStatusBarHUD.h"
 #define MCMessageFont [UIFont systemFontOfSize:14]
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define IPHONEX HEIGHT == 812
+// 16进制颜色转换
+#define COLOR_WITH_HEX(hexValue, a) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16)) / 255.0 green:((float)((hexValue & 0xFF00) >> 8)) / 255.0 blue:((float)(hexValue & 0xFF)) / 255.0 alpha:a]
 
 /** 消息的出现时间 */
 static CGFloat const MCMessageShowDuration = 1;
