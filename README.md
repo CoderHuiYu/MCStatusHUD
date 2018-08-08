@@ -1,6 +1,6 @@
 # MCStatusHUD
-状态栏HUD
-## 显示成功信息 eg:
+ a simple HUD
+## How to use 
 [MCStatusBarHUD showMessage:@"成功"]
 ## Podfile
 ```objc
